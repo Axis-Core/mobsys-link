@@ -1,12 +1,11 @@
 {
   "version": 2,
-
   "builds": [
     {
-      "src": "main.js",
+      "src": "yarn && yarn build && yarn start",
       "use": "@vercel/node"
     }
   ],
-  "output": "dist",
-  "routes": [{ "handle": "vercel", "src": "/.*" }]
+  "routes": [{ "handle": "vercel", "src": "/.*" }],
+  "output": "public"
 }
